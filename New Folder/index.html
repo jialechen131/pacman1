@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.13.1/dist/aframe-extras.min.js"></script>
+    <script src="https://cdn.rawgit.com/archilogic-com/aframe-gblock/6498b71d/dist/gblock.js"></script>
+</head>
+
+<body>
+    <a-scene>
+        <!--Build our background and our floor-->
+        <a-plane static-body position="0 -.55 -4" rotation="-90 0 0" width="10000" height="10000" color="gray"></a-plane>
+
+        <a-sky src="https://cdna.artstation.com/p/assets/panos/images/008/533/828/large/tim-barton-skybox-1-equirectangular-10000.jpg?1513362433"></a-sky>
+       
+        <!--Build three obstacles as static bodies so we can stand on them-->
+        <div></div>
+        <a-box data-cloud9-id="73" id="56" static-body="sphereRadius:NaN" position="-1 4.371 -95.792" color="#13226A" height="10" width="120" src="wall.png"></a-box>
+        <a-box data-cloud9-id="80" id="102" static-body="sphereRadius:NaN" position="-60.824 4.081 -65.025" color="#13226A" height="10" width="60" rotation="0.057295779513082325 -89.66789493797383 -0.5729577951308232" src="wall.png"></a-box>
+        <a-box data-cloud9-id="79" id="103" static-body="sphereRadius:NaN" position="59.273 4.063 -65.156" color="#13226A" height="10" width="60" rotation="0.057295779513082325 -89.66789493797383 -0.40107045659157625" src="wall.png"></a-box>
+        <a-box data-cloud9-id="265" id="104" static-body="sphereRadius:NaN" position="-27.329 4.063 -45.87" color="#13226A" height="10" width="40" rotation="0.057 -0.573 -0.401" src="wall.png" geometry="width:30"></a-box>
+        <a-box data-cloud9-id="271" id="105" static-body="sphereRadius:NaN" position="21.546 4.063 -78.052" color="#13226A" height="10" width="40" rotation="0.057295779513082325 -0.5729577951308232 -0.40107045659157625" src="wall.png" geometry="width:15"></a-box>
+        <a-box data-cloud9-id="267" id="106" static-body="sphereRadius:NaN" position="-21.723 4.063 -77.776" color="#13226A" height="10" width="40" rotation="0.057295779513082325 -0.5729577951308232 -0.40107045659157625" src="wall.png" geometry="width:15"></a-box>
+        <a-box data-cloud9-id="255" id="107" static-body="sphereRadius:NaN" position="29.405 4.063 -45.87" color="#13226A" height="10" width="40" rotation="0.057295779513082325 -0.5729577951308232 -0.40107045659157625" src="wall.png" geometry="width:30"></a-box>
+        <a-box data-cloud9-id="273" id="108" static-body="sphereRadius:NaN" position="-20.966 4.063 -51.3" color="#13226A" height="10" width="40" rotation="0.057295779513082325 91.78783877995788 -0.40107045659157625" src="wall.png" geometry="width:10"></a-box>
+        <a-box data-cloud9-id="276" id="109" static-body="sphereRadius:NaN" position="25.664 4.063 -51.3" color="#13226A" height="10" width="40" rotation="0.057 91.788 -0.401" src="wall.png" geometry="width:10"></a-box>
+        <a-box data-cloud9-id="278" id="110" static-body="sphereRadius:NaN" position="-0.509 4.063 -88.157" color="#13226A" height="10" width="40" rotation="0.057295779513082325 -0.5729577951308232 -0.40107045659157625" src="wall.png" geometry="width:20"></a-box>
+        <a-box data-cloud9-id="279" id="111" static-body="sphereRadius:NaN" position="0.799 4.063 -57.007" color="#13226A" height="10" width="40" rotation="0.057295779513082325 -0.5729577951308232 -0.40107045659157625" src="wall.png" geometry="width:20"></a-box>
+        <a-box data-cloud9-id="283" id="112" static-body="sphereRadius:NaN" position="0.886 4.063 -51.3" color="#13226A" material="" height="10" geometry="width:10" width="40" rotation="0.057 91.788 -0.401" src="wall.png"></a-box>
+        <a-box data-cloud9-id="25" id="113" static-body="sphereRadius:NaN" position="0.286 4.071 -83.138" color="#13226A" height="10" geometry="width:10" width="40" rotation="0.057 91.788 -0.401" src="wall.png"></a-box>
+        <a-box data-cloud9-id="288" id="114" static-body="sphereRadius:NaN" position="-53.25 4.063 -64.009" color="#13226A" height="10" width="40" rotation="0.057 -0.573 -0.401" src="wall.png" geometry="width:15"></a-box>
+        <a-box data-cloud9-id="289" id="115" static-body="sphereRadius:NaN" position="51.934 4.063 -63.597" color="#13226A" height="10" width="40" rotation="0.057 -0.573 -0.401" src="wall.png" geometry="width:15"></a-box>
+        <a-box data-cloud9-id="292" id="116" static-body="sphereRadius:NaN" position="-45.08 4.063 -78.073" color="#13226A" height="10" width="40" rotation="0.057 -0.573 -0.401" src="wall.png" geometry="width:15"></a-box>
+        <a-box data-cloud9-id="293" id="117" static-body="sphereRadius:NaN" position="45.173 4.063 -77.694" color="#13226A" height="10" width="40" rotation="0.057 -0.573 -0.401" src="wall.png" geometry="width:15"></a-box>
+        <a-box data-cloud9-id="301" id="118" static-body="sphereRadius:NaN" position="37.588 4.063 -65.098" color="#13226A" height="10" geometry="width:10" width="40" rotation="0.057 91.788 -0.401" src="wall.png" scale="-2.589 1 1"></a-box>
+        <a-box data-cloud9-id="304" id="119" static-body="sphereRadius:NaN" position="-37.236 4.063 -67.039" color="#13226A" height="10" geometry="width:10" width="40" rotation="0.057 91.788 -0.401" src="wall.png" scale="-2.273 1 1"></a-box>
+        <a-box data-cloud9-id="306" id="120" static-body="sphereRadius:NaN" position="33.206 4.063 -87.423" color="#13226A" height="10" width="40" rotation="0.057 91.788 -0.401" src="wall.png" geometry="width:10"></a-box>
+        <a-box data-cloud9-id="307" id="121" static-body="sphereRadius:NaN" position="-33.441 4.063 -87.155" color="#13226A" height="10" width="40" rotation="0.057 91.788 -0.401" src="wall.png" geometry="width:10"></a-box>
+        <a-box data-cloud9-id="46" id="122" static-body="sphereRadius:NaN" position="-14.622 3.638 -35.121" color="#13226A" height="10" width="120" src="wall.png" scale="-0.768 1 1"></a-box>
+        <a-box data-cloud9-id="51" id="123" static-body="sphereRadius:NaN" position="52.098 3.777 -35.125" color="#13226A" height="10" width="40" rotation="0.057 -0.573 -0.401" src="wall.png" geometry="width:15"></a-box>
+        <a-box data-cloud9-id="71" color="green" id="start" static-body position="38.424 0 -26.201" scale="5 0.658 5" material="" geometry="height:1;width:1"></a-box>
+        <a-box data-cloud9-id="64" id="124" static-body="sphereRadius:NaN" position="38.477 4.063 -16.708" color="#13226A" height="10" width="40" rotation="0.057295779513082325 179.33578987594765 -0.40107045659157625" src="wall.png" geometry="width:20"></a-box>
+        <a-box data-cloud9-id="64" id="125" static-body="sphereRadius:NaN" position="29.196 4.063 -24.666" color="#13226A" height="10" width="40" rotation="0.057 -90.527 -0.401" src="wall.png" geometry="width:20"></a-box>
+        <a-box data-cloud9-id="39" id="126" static-body="sphereRadius:NaN" position="47.985 4.063 -25.458" color="#13226A" height="10" width="40" rotation="0.057295779513082325 -88.69386668625144 -0.40107045659157625" src="wall.png" geometry="width:20"></a-box>
+        <!--winning block-->
+        <a-box data-cloud9-id="77" color="yellow" id="win" static-body="sphereRadius:NaN" position="38.424 0 3778.817" scale="5 0.658 5"></a-box>]
+        <!--winning block-->
+        <!--play again-->
+        <a-box color="blue" id="again" static-body position="30.424 0 3778.817" scale="5 0.658 5"></a-box>
+        <!--play again-->
+        <a-box position="39, 0 ,3783" src="https://i.ytimg.com/vi/gaCp4Cmy3A0/maxresdefault.jpg"></a-box>
+        <a-sphere data-cloud9-id="43" id="sphere" position="3.452 0 -70.62" radius="0.5" material=""></a-sphere>
+        <a-sphere data-cloud9-id="44" id="sphere" position="17.217 0 -69.053" radius="0.5" material=""></a-sphere>
+
+
+
+
+        <!--<a-cylinder static-body position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>-->
+
+        <!--Build one dynamic body - a soccer ball we can play with-->
+        <!--<a-sphere data-cloud9-id="125" id="theball" dynamic-body="sphereRadius:NaN" position="-6.246 0.6 -1.491" radius="0.5" color="tomato" mass="1" quaternion="-0.343 -0.478 -0.351 0.729" velocity=""></a-sphere>-->
+
+        <!--Make a player/camera entity, and give it the attributes we need it to have in order control camera with mouse, movement with WASD, and jump with spacebar-->
+        <a-entity class="player" id="player" camera jump-ability universal-controls kinematic-body position="38.424 4 -26.201">
+            <!--<a-entity data-cloud9-id="1955" gblock="https://poly.google.com/view/bw8ym2WzYLK" static-body position="0 -0.706 -4" rotation="-84.339 93.621 0" scale="0.3 0.3 0.3"></a-entity>-->
+            <!--<a-entity class="ghost" id="pinky" color="#FEBDDD" gblock="https://poly.google.com/view/8Rkc4NeiK-M" position="0 0 0 "></a-entity>-->
+            <!--<a-entity class="ghost" id="blinky" color="#EF1820" gblock="https://poly.google.com/view/8Rkc4NeiK-M" position="0 0 0 "></a-entity>-->
+            <!--<a-entity class="ghost" id="inky" color="#00FFDF" gblock="https://poly.google.com/view/8Rkc4NeiK-M" position="0 0 0 "></a-entity>-->
+            <!--<a-entity class="ghost" id="Clyde" color="#FFBD42" gblock="https://poly.google.com/view/8Rkc4NeiK-M" position="0 0 0"></a-entity>-->
+
+
+            <a-entity id="" geometry="primitive: box">
+                <a-animation attribute="material.color" from="white" to="red" dur="1000"></a-animation>
+            </a-entity>
+
+        </a-entity>
+        <a-sphere data-cloud9-id="19" id="sphere" position="0 0 -70.62" radius="0.5" material=""></a-sphere>
+        <a-sphere data-cloud9-id="19" id="winning" static-body position="0 0 -69.053" radius="0.5" material="" color="yellow"></a-sphere>
+        <a-sphere data-cloud9-id="19" id="sphere" position="0 0 -67.667" radius="0.5" material=""></a-sphere>
+        <a-entity data-cloud9-id="104" id="ghostTesting" gblock="https://poly.google.com/view/5JhJgK4sQHI" static-body="sphereRadius:NaN" position="51.729 0 -60.938" rotation="16.558 2.177 0" scale="0.02 0.02 0.02">
+            <a-animation attribute="position" from="51.729 0 -60.938" to="51.729 0 -42.886" repeat="indefinite" dur="5000"></a-animation>
+        </a-entity>
+ 
+        <a-entity data-cloud9-id="176" class="ghost" id="pinky" rgb=(254,189, 221) gblock="https://poly.google.com/view/5JhJgK4sQHI" static-body position="-56.94 0 -37.794" scale="0.02 0.02 0.02">
+            <a-animation attribute="position" from="-56.94 0 -37.794" to="3.755 0 -41.409" repeat="indefinite" dur="2000"></a-animation>
+
+        </a-entity>
+        <a-entity>
+            <a-entity data-cloud9-id="386" class="ghost" id="blinky" rgb(239,="" 24,="" 31)="" gblock="https://poly.google.com/view/5JhJgK4sQHI" static-body="sphereRadius:NaN" position="-25.25 0 -89.908" scale="0.02 0.02 0.02"></a-entity>
+            <a-animation attribute="rotation" dur="4000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-entity>
+        <a-entity>
+            <a-entity data-cloud9-id="387" class="ghost" id="inky" color="#00FFDF" gblock="https://poly.google.com/view/5JhJgK4sQHI" static-body="sphereRadius:NaN" position="0 0 -72.652" scale="0.02 0.02 0.02"></a-entity>
+            <a-animation attribute="rotation" dur="3000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+        </a-entity>
+        <a-entity>
+            <a-entity data-cloud9-id="392" class="ghost" id="Clyde" color="#FFBD42" gblock="https://poly.google.com/view/5JhJgK4sQHI" static-body="sphereRadius:NaN" position="26.171 0 -72.92" scale="0.02 0.02 0.02">
+
+            </a-entity>
+            <a-animation attribute="rotation" dur="5500" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>s
+        </a-entity>
+
+        <a-entity>
+            <a-entity data-cloud9-id="68" class="ghost" id="ghost6" color="#FFBD42" gblock="https://poly.google.com/view/5JhJgK4sQHI" static-body="sphereRadius:NaN" position="23.195 0 -62.166" scale="0.02 0.02 0.02">
+
+            </a-entity>
+            <a-animation attribute="rotation" dur="5000" from="0 0 0" to="0 360 0" repeat="indefinite" delay="0" easing="linear"></a-animation>
+
+        </a-entity>
+
+
+
+    </a-scene>
+</body>
+<script type="text/javascript" src="script.js"></script>
+
+</html>
+
+<!--http://i.imgur.com/UsL5CtS.png https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT14bIJDNhhgeVsJy-UjMbTkZBKwaYPnr5iQW4pFkvaQHRUO_Hwxg -->
